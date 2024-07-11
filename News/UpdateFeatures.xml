@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS SACGuns HugsLib Update News-->
+<Defs>
+	<HugsLib.UpdateFeatureDef Name="gitsHLModUpdatesBase" Abstract="True">
+		<modNameReadable>GiTS Seburo Advanced Weapon Systems</modNameReadable>
+		<modIdentifier>GiTS_SACGuns_HL</modIdentifier>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3257892278</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="gitsHLModUpdatesBase">
+		<defName>SACGuns_HL_1_2_3</defName>
+		<assemblyVersion>1.2.3</assemblyVersion>
+		<content>Updated to README.txt adding separate licenses for the mod and art assets, also fixed typos within it.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="gitsHLModUpdatesBase">
+		<defName>SACGuns_HL_1_2_2</defName>
+		<assemblyVersion>1.2.2</assemblyVersion>
+		<content>Quick hotfix for a minor issue with an incorrectly named parent def.</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="gitsHLModUpdatesBase">
+		<defName>SACGuns_HL_1_2_1</defName>
+		<assemblyVersion>1.2.1</assemblyVersion>
+		<content>A minor patch renaming this mod in line with a new series I may or may not expand now that I've released GiTS Cyberbrains! Also, all gun textures in this mod have been upscaled for Camera+ users.
+
+|Patch Notes:
+* Mod name changed to 'GiTS Seburo Advanced Weapon Systems' in line with mod series; also updated preview image.
+* All guns textures have been upscaled for camera mods that provide zoom, such as Camera+, to be able to catch more details on the textures.
+* HugsLib's mod update news feature is now supported; additionally to be 100% clear, HugsLib is NOT a new dependency and is NOT required to run this mod.
+* Changes to Manifest.xml and About.xml to update or provide support for some external mod managers.
+* Minor folder and file structure changes.</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>

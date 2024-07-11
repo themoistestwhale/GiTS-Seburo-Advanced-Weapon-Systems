@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS Precision Rifles-->
+<Defs>
+<!-- Seburo SRPS Police Sniper Rifle
+no muzzle flash, as it is suppressed-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoSRPSPR</defName>
+    <label>Seburo SRPS</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.1</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_PrecisionRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>A scaled-down version of the venerable Seburo SR-50 rifle, this sniper rifle was designed for police service. Chambered in a smaller calibre, it has less reach than its larger counterpart as well as less firepower, but is much lighter and accurate at distance.\n\nThis pattern comes fitted with an integrally mounted suppressor, making this rifle quiet and suited for hunting or stealthy raids on Rimworlds.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoSRPS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>51150</WorkToMake>
+      <Mass>4.2</Mass>
+      <AccuracyTouch>0.48</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+			<HuntingStealth>0.5</HuntingStealth> <!-- suppressed rifle-->
+		</equippedStatOffsets>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>426</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac300Winchester</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>44.9</range>
+        <soundCast>sacSRPSShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale> <!-- suppressed rifle-->
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9.4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Seburo SR50 Sniper Rifle-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoSR50PR</defName>
+    <label>Seburo SR-50</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.1</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_PrecisionRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>Ancient bolt-action rifle chambered in a massive, armor-piercing calibre, this rifle was designed with bionically augmented users in mind due its heavy weight and bulk. It is slightly less accurate at range than a regular sniper rifle, but is capable of blasting holes through tanks with ease.\n\nThe user is recommended to wear ear protection or adjust your tactical hearing sensitivity when firing this rifle.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoSR50</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.35,1.35)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>59000</WorkToMake>
+      <Mass>9.4</Mass>
+      <AccuracyTouch>0.32</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.86</AccuracyLong>
+      <RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>428</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac127x99mmHEIAPLRS</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>46.9</range>
+        <soundCast>sacSR50Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.4</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11.2</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(1.2,1.2)</drawSize>
+				<offsets>
+					<li>(0.68,0.075)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Seburo SR50 Suppressed Sniper Rifle
+no muzzle flash, as it is suppressed-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoSR50SuppressedPR</defName>
+    <label>Seburo SR-50 Suppressed</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.05</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_PrecisionRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>Ancient bolt-action rifle chambered in a massive, armor-piercing calibre, this rifle was designed with bionically augmented users in mind due its heavy weight and bulk. It is slightly less accurate at range than a regular sniper rifle, but is capable of blasting holes through tanks with ease.\n\nThis pattern comes fit with a huge suppressor which replaces the muzzle break, making this rifle quieter than its regular counterpart.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoSR50Suppressed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.35,1.35)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>59200</WorkToMake>
+      <Mass>9.4</Mass>
+      <AccuracyTouch>0.32</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.86</AccuracyLong>
+      <RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+			<HuntingStealth>0.5</HuntingStealth> <!-- suppressed rifle-->
+		</equippedStatOffsets>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>428</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac127x99mmHEIAPLRS</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>46.9</range>
+        <soundCast>sacSR50SuppressedShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale> <!-- suppressed rifle-->
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.4</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10.8</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Seburo AASR Anti Armor Rifle-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoAASRAT</defName>
+    <label>Seburo Anti-Armor Rifle</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.001</generateCommonality> <!-- rare and terrifying-->
+    <relicChance>0</relicChance>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_AntiTankWeapon</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>This monstrosity of a rifle is designed to be wielded by cyberised users against heavily armored targets. Firing high velocity armor piercing rounds, this rifle combines the accuracy of many precision rifles thanks to its advanced electronics and stability with the heavy firepower required to take out tanks or mechs.\n\nThis rifle forgoes the usual optical scope and instead links with the users cybernetics, allowing for extreme accuracy at range.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoAASR</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>11.5</Mass>
+      <AccuracyTouch>0.27</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.86</AccuracyMedium>
+      <AccuracyLong>0.96</AccuracyLong>
+      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+    <costList>
+      <Steel>180</Steel>
+      <ComponentIndustrial>13</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>429</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac125x130mmPELE</defaultProjectile>
+        <warmupTime>4.1</warmupTime>
+        <range>53.9</range>
+        <soundCast>sacAASRShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.4</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11.2</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(1.5,1.45)</drawSize>
+				<offsets>
+					<li>(0.68,0.075)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+</Defs>

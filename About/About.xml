@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>GiTS Seburo Advanced Weapon Systems</name>
+  <author>themoistestwhale</author>
+  <packageId>moistestWhale.SACGuns</packageId>
+  <url>https://steamcommunity.com/sharedfiles/filedetails/?id=3257892278</url>
+  <modVersion>1.2.3</modVersion>
+
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+  </supportedVersions>
+
+  <loadBefore>
+  <!-- n/a-->
+  </loadBefore>
+  <loadAfter>
+    <li>CETeam.CombatExtended</li>
+    <li>IssacZhuang.MuzzleFlash</li>
+  </loadAfter>
+  <incompatibleWith>
+  <!-- no known incompatible mods-->
+  </incompatibleWith>
+
+  <description>Seburo Advanced Weapons Systems is a Japanese megacorporation tasked with creating modern security equipment. Founded in 2024, Seburo provides only the most cutting-edge in small arms weaponry available, found in a multitude of military and police units across the globe. In demanding situations where gear is paramount, Seburo provides an experience unrivalled by any other.\n\nSeburo Advanced Weapon Systems is a Poseidon Global Industrial Technologies company.</description>
+
+</ModMetaData>

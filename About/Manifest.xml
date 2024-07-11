@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<Manifest>
+  <identifier>GiTS_SACGuns</identifier>
+  <version>1.2.3</version>
+  <loadAfter>
+    <li>CombatExtended</li> <!-- 1.5 Combat Extended does not have a Manifest.xml, only applies to 1.4 Combat Extended-->
+  </loadAfter>
+  <suggests>
+    <li>GiTS_Cyberbrains</li>
+  </suggests>
+  <showCrossPromotions>true</showCrossPromotions>
+</Manifest>

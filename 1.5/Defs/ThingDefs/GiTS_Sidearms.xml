@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS sidearms-->
+<Defs>
+<!-- Seburo M5 Pistol-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoM5P</defName>
+    <label>Seburo M5</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.25</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_Pistol</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <description>An ancient highly-concealable sidearm, this SA/DA handgun is quick to draw and feeds from a double stack magazine for high capacity. It lacks the firepower of other sidearms, but makes more than up for it with its light weight and gun handling.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoM5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8,0.8)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.98</Mass>
+      <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <displayPriority>406</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac545x18mm</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>22.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.4,0.4)</drawSize>
+				<offsets>
+					<li>(0.2,0.1)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Seburo M10 Pistol-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoM10P</defName>
+    <label>Seburo M10</label>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability> <!-- considered rare pattern-->
+    <generateCommonality>0.15</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_Pistol</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <description>An ancient highly-concealable sidearm stemming from the Seburo M5 pattern, this variation fills the same role with a longer barrel, giving it more range than its smaller parent model.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoM10</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8,0.8)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>1.05</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <displayPriority>407</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac545x18mm</defaultProjectile>
+        <warmupTime>0.23</warmupTime>
+        <range>23.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.4,0.4)</drawSize>
+				<offsets>
+					<li>(0.225,0.1)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Batou's Browning BDA M-7 Pistol-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacBrowningBDAM7P</defName>
+    <label>Browning BDA M-7</label>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability> <!-- signature weapon, rare-->
+    <generateCommonality>0.05</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_Pistol</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <description>An ancient handgun rechambered in a larger round than its predecessor- this handgun is markably balanced and will perform well in a variety of situations.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacBrowningBDAM7</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.85,0.85)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.1</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <displayPriority>408</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac1143x23mm</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.6,0.45)</drawSize>
+				<offsets>
+					<li>(0.23,0.115)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Togusa's Mateba 2008M Revolver-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacMateba2008mR</defName>
+    <label>Mateba 2008M</label>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability> <!-- signature weapon, rare-->
+    <generateCommonality>0.05</generateCommonality>
+    <possessionCount>1</possessionCount>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <description>Ancient compact revolver, this sidearm is smaller than regular revolvers but still contains the same heavy firepower. It performs better in close-quarters, but struggles at longer ranges. Comes with a speedloader.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacMateba2008M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75,0.75)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>5400</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac9x33mmR</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.9,0.85)</drawSize>
+				<offsets>
+					<li>(0.26,0.1)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+</Defs>

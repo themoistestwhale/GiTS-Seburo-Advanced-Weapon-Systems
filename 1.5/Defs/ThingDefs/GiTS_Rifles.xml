@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS Rifles-->
+<Defs>
+<!-- Seburo C26A Assault Rifle-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoC26aAR</defName>
+    <label>Seburo C-26A</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.15</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_AssaultRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>Introduced in 2026, this bullpup assault rifle utilises specialised rounds that can penetrate cyberised or lightly-armoured targets with a focus towards urban close quarters combat. Comes with a laser sight built into the frame above the muzzle.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoC26A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>3.60</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>421</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac545x45mmHVDP</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(0.4,0.4)</drawSize>
+				<offsets>
+					<li>(0.45,0.025)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Seburo C30 Assault Rifle-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoC30AR</defName>
+    <label>Seburo C-30</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.1</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_AssaultRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>This militarised variant stems from the Seburo C-26A, but differs in a focus on offensive capability with new housing for an extended barrel.\n\nComes with an optical sight and underbarrel 40mm Grenade Launcher, making it great for offensive operations.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoC30</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>54000</WorkToMake>
+      <Mass>3.80</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>422</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac545x45mmHVDP</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">
+    <!-- 40mm HE Underbarrel Grenade Launcher-->
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>sacCG30UGL</abilityDef>
+        <maxCharges>2</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>40x51mm MV grenades</chargeNoun>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>20</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(0.45,0.45)</drawSize>
+				<offsets>
+					<li>(0.5,0.084)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- CG30 40mm Underbarrel Grenade Launcher
+used by Seburo C30-->
+  <AbilityDef>
+    <defName>sacCG30UGL</defName>
+    <label>CG-30 Underbarrel Grenade Launcher</label>
+    <description>Lobs a 40x51mm high explosive grenade from the underbarrel launcher. Unfortunately, lacks dedicated sights for aiming.</description>
+    <iconPath>Things/Item/Resource/Chemfuel</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>20.9</range>
+      <warmupTime>2.4</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>sac40x51mmMVHE</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

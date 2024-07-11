@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS Projectiles-->
+<Defs>
+<!-- 5.45x18mm 7N7 Pistol Bullet
+used by Seburo M5 and Seburo M10-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac545x18mm</defName>
+    <label>5.45x18mm 7N7 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 11.43x23mm .45 ACP Pistol Bullet
+used by Batou's Browning BDA M7-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac1143x23mm</defName>
+    <label>11.43x23mm Auto bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 9x33mmR .307 Revolver Bullet
+used by Togusa's Mateba 2008M-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac9x33mmR</defName>
+    <label>9x33mmR S&amp;W Magnum bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.17</armorPenetrationBase>
+      <speed>52</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 5.45x45mm Standard SMG Bullet
+used by Seburo C25A-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac545x45mm</defName>
+    <label>5.45x45mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 5.45x45mm High Velocity HESH SMG Bullet
+used by Seburo C27A-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac545x45mmHVHESH</defName>
+    <label>5.45x45mm HVHESH bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 5.7x28mm SS190 +P SMG Bullet
+used by CZN M22-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac57x28mmPlusP</defName>
+    <label>5.7x28mm+P SS190 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 5.45x45mm High Velocity DP Rifle Bullet
+used by Seburo C26A and Seburo C30-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac545x45mmHVDP</defName>
+    <label>5.45x45mm HVDP bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- .300 Winchester Magnum Precision Rifle Bullet
+used by Seburo SRPS-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac300Winchester</defName>
+    <label>.300 Winchester Magnum bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.38</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 12.7x99mm HEIAP LRS Precision Rifle Bullet
+used by Seburo SR50 and Seburo SR50 Suppressed-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac127x99mmHEIAPLRS</defName>
+    <label>12.7x99mm HEIAP LRS bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>54</damageAmountBase>
+      <stoppingPower>2.6</stoppingPower>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
+      <speed>115</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 12.5x130mm PELE Anti Armor Round
+used by Seburo AASR-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac125x130mmPELE</defName>
+    <label>12.5x130mm PELE bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.9</armorPenetrationBase>
+      <speed>210</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 12.7x99mm HMG Bullet
+used by Seburo MG-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac127x99mmHMG</defName>
+    <label>12.7x99mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>74</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- 20x42mm HESH Grenade
+used by CG27A 20mm Underbarrel Grenade Launcher-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac20x42mmHESH</defName>
+    <label>20x42mm HESH Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(140,135,156)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>65</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>1</explosionRadius>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.25</shadowSize>
+    </projectile>
+  </ThingDef>
+
+<!-- 40x51mm MV HE Grenade
+used by CG30 40mm Underbarrel Grenade Launcher on the Seburo C30-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>sac40x51mmMVHE</defName>
+    <label>40x51mm MV HE Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(140,135,156)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <explosionRadius>2</explosionRadius>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <arcHeightFactor>1</arcHeightFactor>
+      <shadowSize>0.54</shadowSize>
+    </projectile>
+  </ThingDef>
+</Defs>

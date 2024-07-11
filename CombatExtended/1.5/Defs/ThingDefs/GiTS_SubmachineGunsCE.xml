@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS CE SMGs-->
+<Defs>
+<!-- Seburo C25A SMG-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoC25aSMG</defName>
+    <label>Seburo C-25A</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.25</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_SMG</li>
+			<li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <description>Introduced in the year 2025, this personal defence weapon utilises specialised rounds to penetrate cyberised targets and lightly armoured foes. Utilising a loaded magazine as part of the grip, it features forward ejection and a top-mounted brass catcher. It is lightweight and compact with a high fire rate, but is a bit janky in its overall construction.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoC25A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6,0.6)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <statBases>
+			<Bulk>3.40</Bulk>
+			<Mass>3.44</Mass>
+			<SwayFactor>2.28</SwayFactor>
+			<ShotSpread>0.13</ShotSpread>
+			<SightsEfficiency>0.70</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<WorkToMake>33000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <displayPriority>441</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<range>18</range>
+				<warmupTime>0.6</warmupTime>
+				<recoilAmount>1.47</recoilAmount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_545x45mm_FMJ</defaultProjectile>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+    </verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+				<reloadTime>4.5</reloadTime>
+				<ammoSet>AmmoSet_545x45mm</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.4</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.28,0.28)</drawSize>
+				<offsets>
+					<li>(0.28,0.128)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Seburo C27A SMG-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoC27aSMG</defName>
+    <label>Seburo C-27A</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.15</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_SMG</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <description>A product of the year 2027, this submachine gun is described as a close quarters suppression firearm and has the features to prove it. The extended barrel construction provides higher velocities and armor penetration than its contemporary the Seburo C-25A, at the cost of added weight and production costs.\n\nThis model features an underbarrel grenade launcher; firing 20mm HESH rounds at high velocity. This makes it ideal for dominating close quarters combat against dangerous opponents.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoC27A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <statBases>
+			<Bulk>4.49</Bulk>
+			<Mass>3.90</Mass>
+			<SwayFactor>1.13</SwayFactor>
+			<ShotSpread>0.08</ShotSpread>
+			<SightsEfficiency>1.00</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<WorkToMake>36500</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <displayPriority>442</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<range>25</range>
+				<warmupTime>0.6</warmupTime>
+				<recoilAmount>1.35</recoilAmount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_545x45mm_FMJ</defaultProjectile>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+    </verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+				<reloadTime>4.5</reloadTime>
+				<ammoSet>AmmoSet_545x45mm</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+<!-- CG27A 20mm Underbarrel Grenade Launcher-->
+      <li Class="CombatExtended.CompProperties_UnderBarrel">
+        <propsUnderBarrel>
+          <magazineSize>1</magazineSize>
+          <reloadTime>1.98</reloadTime>
+          <ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
+        </propsUnderBarrel>
+        <verbPropsUnderBarrel>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_20x42mmGrenade_HE</defaultProjectile>
+          <warmupTime>0.54</warmupTime>
+          <range>25</range>
+          <minRange>4</minRange>
+          <soundCast>InfernoCannon_Fire</soundCast>
+          <soundCastTail>GunTail_Light</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+          <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        </verbPropsUnderBarrel>
+        <propsFireModesUnderBarrel>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aimedBurstShotCount>1</aimedBurstShotCount>
+          <aiAimMode>AimedShot</aiAimMode>
+        </propsFireModesUnderBarrel>
+      </li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.38,0.38)</drawSize>
+				<offsets>
+					<li>(0.28,0.097)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Crvena Zastava Nosle M22 SMG-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacCZNM22SMG</defName>
+    <label>Crvena Zastava Nosle M-22</label>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability> <!-- signature weapon, rare-->
+    <generateCommonality>0.05</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_SMG</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>An ancient bullpup design using specialised rounds that can penetrate cyberised or lightly-armoured targets, this submachine gun is iconic for its use of over-pressure rounds. The design performs best in medium range engagements, but does not disappoint in close range engagements either.\n\nThis model comes with a reinforced barrel construction, removing the necessity for changing the barrel in heated situations after firing large volumes of rounds.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacCZNM22</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <statBases>
+			<Bulk>4.95</Bulk>
+			<Mass>2.80</Mass>
+			<SwayFactor>0.78</SwayFactor>
+			<ShotSpread>0.12</ShotSpread>
+			<SightsEfficiency>1.10</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<WorkToMake>36000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+			<Chemfuel>5</Chemfuel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>443</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<range>31</range>
+				<warmupTime>0.5</warmupTime>
+				<recoilAmount>1.10</recoilAmount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_FN57x28mm_PlusP</defaultProjectile>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+    </verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTime>4.5</reloadTime>
+				<ammoSet>AmmoSet_FN57x28mm</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(0.3,0.3)</drawSize>
+				<offsets>
+					<li>(0.48,0.091)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- GiTS Five Seven Ammo-->
+<Defs>
+<!-- 5.7x28mm+P Ammo-->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="FN57x29mmBase">
+		<defName>Ammo_FN57x28mm_PlusP</defName>
+		<label>FN 5.7x28mm (Plus-P)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.046</MarketValue>
+		</statBases>
+		<ammoClass>ExplosiveAP</ammoClass>
+		<cookOffProjectile>Bullet_FN57x28mm_PlusP</cookOffProjectile>
+	</ThingDef>
+<!-- 5.7x28mm+P Projectile-->
+	<ThingDef ParentName="BaseFN57x28mmBullet">
+		<defName>Bullet_FN57x28mm_PlusP</defName>
+		<label>FN 5.7mm bullet (Plus-P)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationSharp>10</armorPenetrationSharp>
+			<armorPenetrationBlunt>10.980</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+<!-- 5.7x28mm+P Recipe-->
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_FN57x28mm_PlusP</defName>
+		<label>make FN 5.7x28mm (Plus-P) cartridge x500</label>
+		<description>Craft 500 FN 5.7x28mm (Plus-P) cartridges.</description>
+		<jobString>Making FN 5.7x28mm (Plus-P) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_FN57x28mm_PlusP>500</Ammo_FN57x28mm_PlusP>
+		</products>
+		<workAmount>1250</workAmount>
+	</RecipeDef>
+</Defs>

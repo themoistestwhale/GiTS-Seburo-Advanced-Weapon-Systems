@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- patches in 5.7x28mm+P rounds into Combat Extended AmmoSetDef for 5.7x28mm ammo-->
+<Patch>
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_FN57x28mm"]/ammoTypes</xpath>
+  <value>
+			<Ammo_FN57x28mm_PlusP>Bullet_FN57x28mm_PlusP</Ammo_FN57x28mm_PlusP>
+  </value>
+</Operation>
+</Patch>

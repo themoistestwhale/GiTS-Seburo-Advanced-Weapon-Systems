@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- GiTS 5.45x18mm 7N7 Pistol Ammo-->
+<Defs>
+	<ThingCategoryDef>
+		<defName>Ammo545x18mm7N7</defName>
+		<label>5.45x18mm 7N7</label>
+		<parent>AmmoPistols</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPistol</iconPath>
+	</ThingCategoryDef>
+<!-- GiTS 5.45x18mm 7N7 AmmoSet-->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_545x18mm7N7</defName>
+		<label>5.45x18mm 7N7</label>
+		<ammoTypes>
+			<Ammo_545x18mm7N7_FMJ>Bullet_545x18mm7N7_FMJ</Ammo_545x18mm7N7_FMJ>
+			<Ammo_545x18mm7N7_AP>Bullet_545x18mm7N7_AP</Ammo_545x18mm7N7_AP>
+			<Ammo_545x18mm7N7_HP>Bullet_545x18mm7N7_HP</Ammo_545x18mm7N7_HP>
+		</ammoTypes>
+		<similarTo>AmmoSet_Pistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+<!-- GiTS 5.45x18mm 7N7 Ammo-->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="545x18mm7N7Base" ParentName="SmallAmmoBase" Abstract="True">
+		<description>An uncommon pistol round with armor penetrating capabilities.</description>
+		<statBases>
+			<Mass>0.005</Mass>
+			<Bulk>0.01</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo545x18mm7N7</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="545x18mm7N7Base">
+		<defName>Ammo_545x18mm7N7_FMJ</defName>
+		<label>5.45x18mm 7N7 (FMJ)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/FMJ</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.03</MarketValue>
+		</statBases>
+		<ammoClass>FullMetalJacket</ammoClass>
+		<cookOffProjectile>Bullet_545x18mm7N7_FMJ</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="545x18mm7N7Base">
+		<defName>Ammo_545x18mm7N7_AP</defName>
+		<label>5.45x18mm 7N7 (AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.03</MarketValue>
+		</statBases>
+		<ammoClass>ArmorPiercing</ammoClass>
+		<cookOffProjectile>Bullet_545x18mm7N7_AP</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="545x18mm7N7Base">
+		<defName>Ammo_545x18mm7N7_HP</defName>
+		<label>5.45x18mm 7N7 (HP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/HP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.03</MarketValue>
+		</statBases>
+		<ammoClass>HollowPoint</ammoClass>
+		<cookOffProjectile>Bullet_545x18mm7N7_HP</cookOffProjectile>
+	</ThingDef>
+
+<!-- GiTS 5.45x18mm 7N7 Projectiles-->
+	<ThingDef Name="Base545x18mm7N7Bullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>100</speed>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Fleck_PistolAmmoCasings</casingMoteDefname>
+			<casingFilthDefname>Filth_PistolAmmoCasings</casingFilthDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base545x18mm7N7Bullet">
+		<defName>Bullet_545x18mm7N7_FMJ</defName>
+		<label>5.45x18mm 7N7 bullet (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>7.42</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base545x18mm7N7Bullet">
+		<defName>Bullet_545x18mm7N7_AP</defName>
+		<label>5.45x18mm 7N7 bullet (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>9</armorPenetrationSharp>
+			<armorPenetrationBlunt>7.42</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base545x18mm7N7Bullet">
+		<defName>Bullet_545x18mm7N7_HP</defName>
+		<label>5.45x18mm 7N7 bullet (HP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationSharp>2.25</armorPenetrationSharp>
+			<armorPenetrationBlunt>7.42</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+<!-- GiTS 5.45x18mm 7N7 Recipes-->
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_545x18mm7N7_FMJ</defName>
+		<label>make 5.45x18mm 7N7 (FMJ) cartridge x500</label>
+		<description>Craft 500 5.45x18mm 7N7 (FMJ) cartridges.</description>
+		<jobString>Making 5.45x18mm 7N7 (FMJ) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_545x18mm7N7_FMJ>500</Ammo_545x18mm7N7_FMJ>
+		</products>
+		<workAmount>600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_545x18mm7N7_AP</defName>
+		<label>make 5.45x18mm 7N7 (AP) cartridge x500</label>
+		<description>Craft 500 5.45x18mm 7N7 (AP) cartridges.</description>
+		<jobString>Making 5.45x18mm 7N7 (AP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_545x18mm7N7_AP>500</Ammo_545x18mm7N7_AP>
+		</products>
+		<workAmount>720</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_545x18mm7N7_HP</defName>
+		<label>make 5.45x18mm 7N7 (HP) cartridge x500</label>
+		<description>Craft 500 5.45x18mm 7N7 (HP) cartridges.</description>
+		<jobString>Making 5.45x18mm 7N7 (HP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_545x18mm7N7_HP>500</Ammo_545x18mm7N7_HP>
+		</products>
+		<workAmount>600</workAmount>
+	</RecipeDef>
+</Defs>

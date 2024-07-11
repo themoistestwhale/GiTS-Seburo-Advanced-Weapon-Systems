@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS CE HMGs-->
+<Defs>
+<!-- Seburo MG Heavy Machine Gun-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoMG</defName>
+    <label>Seburo MG</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.10</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_HMG</li>
+			<li>CE_MachineGun</li>
+			<li>Bipod_SAW</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>An ancient bullpup heavy machine gun, this was designed with bionically augmented users in mind. Has hard hitting, armor-piercing firepower with decent accuracy at distance at the cost of being bulky and heavy.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+			<Bulk>13.15</Bulk>
+			<Mass>34.60</Mass>
+			<SwayFactor>3.34</SwayFactor>
+			<ShotSpread>0.01</ShotSpread>
+			<SightsEfficiency>1.00</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+			<WorkToMake>62000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>160</Steel>
+			<Chemfuel>20</Chemfuel>
+      <ComponentIndustrial>11</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>446</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<range>67</range>
+				<warmupTime>1.3</warmupTime>
+				<recoilAmount>1.48</recoilAmount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+    </verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>115</magazineSize>
+				<reloadTime>8.2</reloadTime>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+    <tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.65</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>3</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.7</cooldownTime>
+				<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.65</cooldownTime>
+				<armorPenetrationBlunt>3</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1,1)</drawSize>
+				<offsets>
+					<li>(0.61,0.095)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+</Defs>

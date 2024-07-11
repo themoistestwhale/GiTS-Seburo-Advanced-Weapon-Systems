@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Compatability WeaponAdjustmentDefs for Aelanna's Weapon Racks-->
+<Defs>
+<!-- Sidearms-->
+
+<!-- Seburo M5-->
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>sacSeburoM5P</defName>
+    <thingDef>sacSeburoM5P</thingDef>
+    <sizeFactor>0.75</sizeFactor>
+  </WeaponRacks.WeaponAdjustmentDef>
+<!-- Seburo M10-->
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>sacSeburoM10P</defName>
+    <thingDef>sacSeburoM10P</thingDef>
+    <sizeFactor>0.75</sizeFactor>
+  </WeaponRacks.WeaponAdjustmentDef>
+<!-- Browning BDA M7-->
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>sacBrowningBDAM7P</defName>
+    <thingDef>sacBrowningBDAM7P</thingDef>
+    <sizeFactor>0.75</sizeFactor>
+  </WeaponRacks.WeaponAdjustmentDef>
+<!-- Mateba 2008M-->
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>sacMateba2008mR</defName>
+    <thingDef>sacMateba2008mR</thingDef>
+    <sizeFactor>0.75</sizeFactor>
+  </WeaponRacks.WeaponAdjustmentDef>
+
+<!-- SMGs-->
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>sacSeburoC25aSMG</defName>
+    <thingDef>sacSeburoC25aSMG</thingDef>
+    <sizeFactor>0.75</sizeFactor>
+  </WeaponRacks.WeaponAdjustmentDef>
+</Defs>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- GiTS SMGs-->
+<Defs>
+<!-- Seburo C25A SMG-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoC25aSMG</defName>
+    <label>Seburo C-25A</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.25</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_SMG</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <description>Introduced in the year 2025, this personal defence weapon utilises specialised rounds to penetrate cyberised targets and lightly armoured foes. Utilising a loaded magazine as part of the grip, it features forward ejection and a top-mounted brass catcher. It is lightweight and compact with a high fire rate, but is a bit janky in its overall construction.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoC25A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6,0.6)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>2.85</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <displayPriority>441</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac545x45mm</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>21.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.28,0.28)</drawSize>
+				<offsets>
+					<li>(0.28,0.128)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- Seburo C27A SMG-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacSeburoC27aSMG</defName>
+    <label>Seburo C-27A</label>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.15</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_SMG</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <description>A product of the year 2027, this submachine gun is described as a close quarters suppression firearm and has the features to prove it. The extended barrel construction provides higher velocities and armor penetration than its contemporary the Seburo C-25A, at the cost of added weight and production costs.\n\nThis model features an underbarrel grenade launcher; firing 20mm HESH rounds at high velocity. This makes it ideal for dominating close quarters combat against dangerous opponents.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacSeburoC27A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <statBases>
+      <WorkToMake>37000</WorkToMake>
+      <Mass>3.75</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <displayPriority>442</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac545x45mmHVHESH</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>23.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">
+    <!-- 20mm HESH Suppression Launcher-->
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>sacCG27aUGL</abilityDef>
+        <maxCharges>6</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>20x42mm HESH grenades</chargeNoun>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>30</baseReloadTicks>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.38,0.38)</drawSize>
+				<offsets>
+					<li>(0.28,0.097)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<!-- CG27A 20mm Underbarrel Grenade Launcher
+used by Seburo C27A-->
+  <AbilityDef>
+    <defName>sacCG27aUGL</defName>
+    <label>CG-27A Underbarrel Grenade Launcher</label>
+    <description>Direct fires a 20x42mm high velocity HESH slug from the underbarrel launcher. Unfortunately, lacks dedicated sights for aiming.</description>
+    <iconPath>Things/Item/Resource/Chemfuel</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>18.9</range>
+      <warmupTime>2</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>sac20x42mmHESH</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!-- Crvena Zastava Nosle M22 SMG-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>sacCZNM22SMG</defName>
+    <label>Crvena Zastava Nosle M-22</label>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability> <!-- signature weapon, rare-->
+    <generateCommonality>0.05</generateCommonality>
+    <weaponTags>
+      <li>SAC_Gun</li>
+      <li>SAC_SMG</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <description>An ancient bullpup design using specialised rounds that can penetrate cyberised or lightly-armoured targets, this submachine gun is iconic for its use of over-pressure rounds. The design performs best in medium range engagements, but does not disappoint in close range engagements either.\n\nThis model comes with a reinforced barrel construction, removing the necessity for changing the barrel in heated situations after firing large volumes of rounds.</description>
+
+    <graphicData>
+      <texPath>SACGuns/sacCZNM22</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.6</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <displayPriority>443</displayPriority>
+    </recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>sac57x28mmPlusP</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions> <!-- Muzzle Flash mod compat-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(0.3,0.3)</drawSize>
+				<offsets>
+					<li>(0.48,0.091)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+  </ThingDef>
+</Defs>

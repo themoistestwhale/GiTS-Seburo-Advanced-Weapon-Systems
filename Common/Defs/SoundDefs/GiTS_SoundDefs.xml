@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- GiTS audio-->
+<Defs>
+<!-- Seburo SR50 Firing Sound-->
+  <SoundDef>
+    <defName>sacSR50Shot</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>SACGuns/sacSR50Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>45~50</volumeRange>
+        <pitchRange>0.8940217~1.084783</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<!-- Seburo SR50 Suppressed Firing Sound-->
+  <SoundDef>
+    <defName>sacSR50SuppressedShot</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>SACGuns/sacSR50SuppressedShot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40~45</volumeRange>
+        <pitchRange>0.8940217~1.084783</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<!-- Seburo SRPS Firing Sound-->
+  <SoundDef>
+    <defName>sacSRPSShot</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>SACGuns/sacSRPSShot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>45~50</volumeRange>
+        <pitchRange>0.8940217~1.084783</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<!-- Seburo AASR Firing Sound-->
+  <SoundDef>
+    <defName>sacAASRShot</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>SACGuns/sacAASRShot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~65</volumeRange>
+        <pitchRange>0.8940217~1.084783</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>
